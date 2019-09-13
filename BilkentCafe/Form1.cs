@@ -83,7 +83,7 @@ namespace BilkentCafe
             }
             // ilgili masanın sipariş formunu aç
             SiparisForm siparisForm = new SiparisForm(db, siparis);
-            siparisForm.Show();
+            siparisForm.ShowDialog();
              
         }
         private void VerileriYaz()

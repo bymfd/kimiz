@@ -150,6 +150,7 @@
             this.btnAnasayfa.TabIndex = 9;
             this.btnAnasayfa.Text = "<= Anasayfaya Dön";
             this.btnAnasayfa.UseVisualStyleBackColor = false;
+            this.btnAnasayfa.Click += new System.EventHandler(this.btnAnasayfa_Click);
             // 
             // cboUrunler
             // 

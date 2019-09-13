@@ -55,5 +55,10 @@ namespace BilkentCafe
 
 
         }
+
+        private void btnAnasayfa_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
