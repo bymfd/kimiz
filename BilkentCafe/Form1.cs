@@ -84,6 +84,11 @@ namespace BilkentCafe
             // ilgili masanın sipariş formunu aç
             SiparisForm siparisForm = new SiparisForm(db, siparis);
             siparisForm.ShowDialog();
+
+            if(siparis.Durum != SiparisDurum.Aktif)
+            {
+                tiklanan.ImageKey = "bos";
+            }
              
         }
         private void VerileriYaz()

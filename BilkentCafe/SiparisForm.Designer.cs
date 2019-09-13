@@ -126,6 +126,7 @@
             this.btnIptalEt.TabIndex = 7;
             this.btnIptalEt.Text = "Tüm Siparişleri İptal Et";
             this.btnIptalEt.UseVisualStyleBackColor = false;
+            this.btnIptalEt.Click += new System.EventHandler(this.btnIptalEt_Click);
             // 
             // btnOdemeAl
             // 
@@ -138,6 +139,7 @@
             this.btnOdemeAl.TabIndex = 8;
             this.btnOdemeAl.Text = "Ödeme alındı Hesabı Kapat";
             this.btnOdemeAl.UseVisualStyleBackColor = false;
+            this.btnOdemeAl.Click += new System.EventHandler(this.btnOdemeAl_Click);
             // 
             // btnAnasayfa
             // 
