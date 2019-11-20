@@ -177,7 +177,18 @@ namespace kimiz
            
 
         }
-       
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgvSiparisDetaylar.SelectedRows)
+            {
+                dgvSiparisDetaylar.Rows.RemoveAt(row.Index);
+            }
+        }
+
+        private void SiparisForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

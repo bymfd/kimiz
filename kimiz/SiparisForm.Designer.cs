@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SiparisForm));
             this.dgvSiparisDetaylar = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.btnMasaTasi = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudUrunAdet)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +60,7 @@
             this.dgvSiparisDetaylar.Name = "dgvSiparisDetaylar";
             this.dgvSiparisDetaylar.ReadOnly = true;
             this.dgvSiparisDetaylar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(467, 369);
+            this.dgvSiparisDetaylar.Size = new System.Drawing.Size(467, 402);
             this.dgvSiparisDetaylar.TabIndex = 0;
             // 
             // label1
@@ -88,7 +90,7 @@
             this.lblMasaNo.Font = new System.Drawing.Font("Comic Sans MS", 76F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMasaNo.Location = new System.Drawing.Point(484, 61);
             this.lblMasaNo.Name = "lblMasaNo";
-            this.lblMasaNo.Size = new System.Drawing.Size(217, 149);
+            this.lblMasaNo.Size = new System.Drawing.Size(217, 135);
             this.lblMasaNo.TabIndex = 3;
             this.lblMasaNo.Text = "01";
             this.lblMasaNo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,7 +99,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(519, 218);
+            this.label4.Location = new System.Drawing.Point(519, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 18);
             this.label4.TabIndex = 4;
@@ -107,7 +109,7 @@
             // 
             this.lblOdemeTutari.AutoSize = true;
             this.lblOdemeTutari.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblOdemeTutari.Location = new System.Drawing.Point(611, 217);
+            this.lblOdemeTutari.Location = new System.Drawing.Point(610, 199);
             this.lblOdemeTutari.Name = "lblOdemeTutari";
             this.lblOdemeTutari.Size = new System.Drawing.Size(55, 19);
             this.lblOdemeTutari.TabIndex = 5;
@@ -119,6 +121,7 @@
             this.cboUrunler.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboUrunler.FormattingEnabled = true;
             this.cboUrunler.Location = new System.Drawing.Point(3, 23);
+            this.cboUrunler.Margin = new System.Windows.Forms.Padding(6);
             this.cboUrunler.Name = "cboUrunler";
             this.cboUrunler.Size = new System.Drawing.Size(223, 26);
             this.cboUrunler.TabIndex = 6;
@@ -127,6 +130,7 @@
             // 
             this.nudUrunAdet.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nudUrunAdet.Location = new System.Drawing.Point(241, 23);
+            this.nudUrunAdet.Margin = new System.Windows.Forms.Padding(6);
             this.nudUrunAdet.Name = "nudUrunAdet";
             this.nudUrunAdet.Size = new System.Drawing.Size(84, 26);
             this.nudUrunAdet.TabIndex = 7;
@@ -140,6 +144,7 @@
             // 
             this.btnSiparisDetayEkle.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSiparisDetayEkle.Location = new System.Drawing.Point(344, 23);
+            this.btnSiparisDetayEkle.Margin = new System.Windows.Forms.Padding(6);
             this.btnSiparisDetayEkle.Name = "btnSiparisDetayEkle";
             this.btnSiparisDetayEkle.Size = new System.Drawing.Size(126, 28);
             this.btnSiparisDetayEkle.TabIndex = 8;
@@ -151,7 +156,7 @@
             // 
             this.btnSiparisIptal.BackColor = System.Drawing.Color.LightCoral;
             this.btnSiparisIptal.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiparisIptal.Location = new System.Drawing.Point(475, 250);
+            this.btnSiparisIptal.Location = new System.Drawing.Point(475, 221);
             this.btnSiparisIptal.Name = "btnSiparisIptal";
             this.btnSiparisIptal.Size = new System.Drawing.Size(118, 60);
             this.btnSiparisIptal.TabIndex = 9;
@@ -163,7 +168,7 @@
             // 
             this.btnOdemeAl.BackColor = System.Drawing.Color.PaleGreen;
             this.btnOdemeAl.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOdemeAl.Location = new System.Drawing.Point(592, 250);
+            this.btnOdemeAl.Location = new System.Drawing.Point(599, 221);
             this.btnOdemeAl.Name = "btnOdemeAl";
             this.btnOdemeAl.Size = new System.Drawing.Size(116, 60);
             this.btnOdemeAl.TabIndex = 10;
@@ -175,7 +180,7 @@
             // 
             this.btnAnaSayfa.BackColor = System.Drawing.Color.Khaki;
             this.btnAnaSayfa.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnaSayfa.Location = new System.Drawing.Point(475, 309);
+            this.btnAnaSayfa.Location = new System.Drawing.Point(476, 391);
             this.btnAnaSayfa.Name = "btnAnaSayfa";
             this.btnAnaSayfa.Size = new System.Drawing.Size(233, 72);
             this.btnAnaSayfa.TabIndex = 11;
@@ -188,6 +193,7 @@
             this.cboMasaNolar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboMasaNolar.FormattingEnabled = true;
             this.cboMasaNolar.Location = new System.Drawing.Point(522, 27);
+            this.cboMasaNolar.Margin = new System.Windows.Forms.Padding(6);
             this.cboMasaNolar.Name = "cboMasaNolar";
             this.cboMasaNolar.Size = new System.Drawing.Size(121, 21);
             this.cboMasaNolar.TabIndex = 12;
@@ -206,6 +212,7 @@
             // 
             this.btnMasaTasi.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMasaTasi.Location = new System.Drawing.Point(649, 23);
+            this.btnMasaTasi.Margin = new System.Windows.Forms.Padding(6);
             this.btnMasaTasi.Name = "btnMasaTasi";
             this.btnMasaTasi.Size = new System.Drawing.Size(52, 28);
             this.btnMasaTasi.TabIndex = 14;
@@ -216,7 +223,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(484, 387);
+            this.button1.Location = new System.Drawing.Point(484, 340);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(217, 45);
             this.button1.TabIndex = 15;
@@ -232,11 +239,24 @@
             this.printDialog1.ShowHelp = true;
             this.printDialog1.UseEXDialog = true;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Crimson;
+            this.button2.Location = new System.Drawing.Point(484, 287);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(217, 47);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "SİL";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // SiparisForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(714, 442);
+            this.ClientSize = new System.Drawing.Size(722, 475);
+            this.ControlBox = false;
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnMasaTasi);
             this.Controls.Add(this.label3);
@@ -253,8 +273,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvSiparisDetaylar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SiparisForm";
             this.Text = "Sipariş Ekranı";
+            this.Load += new System.EventHandler(this.SiparisForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSiparisDetaylar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudUrunAdet)).EndInit();
             this.ResumeLayout(false);
@@ -281,5 +305,6 @@
         private System.Windows.Forms.Button btnMasaTasi;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.Button button2;
     }
 }
