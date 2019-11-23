@@ -33,6 +33,7 @@
             this.btnUrunler = new System.Windows.Forms.ToolStripMenuItem();
             this.btnGecmisSiparisler = new System.Windows.Forms.ToolStripMenuItem();
             this.lvwMasalar = new System.Windows.Forms.ListView();
+            this.ekranKlavyesiniAçToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnUrunler,
-            this.btnGecmisSiparisler});
+            this.btnGecmisSiparisler,
+            this.ekranKlavyesiniAçToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(554, 24);
@@ -72,17 +74,27 @@
             this.lvwMasalar.UseCompatibleStateImageBehavior = false;
             this.lvwMasalar.DoubleClick += new System.EventHandler(this.lvwMasalar_DoubleClick);
             // 
+            // ekranKlavyesiniAçToolStripMenuItem
+            // 
+            this.ekranKlavyesiniAçToolStripMenuItem.Name = "ekranKlavyesiniAçToolStripMenuItem";
+            this.ekranKlavyesiniAçToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.ekranKlavyesiniAçToolStripMenuItem.Text = "Ekran Klavyesini aç";
+            this.ekranKlavyesiniAçToolStripMenuItem.Click += new System.EventHandler(this.ekranKlavyesiniAçToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(554, 461);
+            this.ControlBox = false;
             this.Controls.Add(this.lvwMasalar);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "MFD";
+            this.Text = "KIMIZ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -97,6 +109,7 @@
         private System.Windows.Forms.ToolStripMenuItem btnUrunler;
         private System.Windows.Forms.ToolStripMenuItem btnGecmisSiparisler;
         private System.Windows.Forms.ListView lvwMasalar;
+        private System.Windows.Forms.ToolStripMenuItem ekranKlavyesiniAçToolStripMenuItem;
     }
 }
 

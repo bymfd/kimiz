@@ -39,5 +39,16 @@ namespace kimiz
             blUrunler.Add(urun);
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+                foreach (DataGridViewRow row in dgvUrunler.SelectedRows)
+                {
+                dgvUrunler.Rows.RemoveAt(row.Index);
+                }
+            
+
+        }
     }
 }

@@ -35,6 +35,7 @@
             this.nudBirimFiyat = new System.Windows.Forms.NumericUpDown();
             this.btnUrunEkle = new System.Windows.Forms.Button();
             this.dgvUrunler = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nudBirimFiyat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUrunler)).BeginInit();
             this.SuspendLayout();
@@ -59,10 +60,11 @@
             // 
             // txtUrunAd
             // 
+            this.txtUrunAd.AcceptsTab = true;
             this.txtUrunAd.Location = new System.Drawing.Point(15, 26);
             this.txtUrunAd.Name = "txtUrunAd";
             this.txtUrunAd.Size = new System.Drawing.Size(100, 20);
-            this.txtUrunAd.TabIndex = 2;
+            this.txtUrunAd.TabIndex = 1;
             // 
             // nudBirimFiyat
             // 
@@ -75,16 +77,17 @@
             this.nudBirimFiyat.Location = new System.Drawing.Point(131, 26);
             this.nudBirimFiyat.Name = "nudBirimFiyat";
             this.nudBirimFiyat.Size = new System.Drawing.Size(120, 20);
-            this.nudBirimFiyat.TabIndex = 3;
+            this.nudBirimFiyat.TabIndex = 2;
             // 
             // btnUrunEkle
             // 
-            this.btnUrunEkle.Location = new System.Drawing.Point(257, 23);
+            this.btnUrunEkle.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.btnUrunEkle.Location = new System.Drawing.Point(290, 18);
             this.btnUrunEkle.Name = "btnUrunEkle";
-            this.btnUrunEkle.Size = new System.Drawing.Size(85, 23);
-            this.btnUrunEkle.TabIndex = 4;
+            this.btnUrunEkle.Size = new System.Drawing.Size(85, 34);
+            this.btnUrunEkle.TabIndex = 3;
             this.btnUrunEkle.Text = "EKLE";
-            this.btnUrunEkle.UseVisualStyleBackColor = true;
+            this.btnUrunEkle.UseVisualStyleBackColor = false;
             this.btnUrunEkle.Click += new System.EventHandler(this.btnUrunEkle_Click);
             // 
             // dgvUrunler
@@ -97,14 +100,26 @@
             this.dgvUrunler.Location = new System.Drawing.Point(15, 61);
             this.dgvUrunler.Name = "dgvUrunler";
             this.dgvUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUrunler.Size = new System.Drawing.Size(327, 367);
+            this.dgvUrunler.Size = new System.Drawing.Size(458, 367);
             this.dgvUrunler.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(398, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "SİL";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UrunlerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 440);
+            this.ClientSize = new System.Drawing.Size(486, 440);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvUrunler);
             this.Controls.Add(this.btnUrunEkle);
             this.Controls.Add(this.nudBirimFiyat);
@@ -129,5 +144,6 @@
         private System.Windows.Forms.NumericUpDown nudBirimFiyat;
         private System.Windows.Forms.Button btnUrunEkle;
         private System.Windows.Forms.DataGridView dgvUrunler;
+        private System.Windows.Forms.Button button1;
     }
 }

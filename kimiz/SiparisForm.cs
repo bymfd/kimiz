@@ -33,6 +33,7 @@ namespace kimiz
             lblMasaNo.Text = string.Format("{0:00}", siparis.MasaNo);
 
             cboUrunler.DataSource = db.Urunler;
+         
             dgvSiparisDetaylar.DataSource = blSiparisDetaylar;
             lblOdemeTutari.Text = siparis.ToplamTutarTL;
 
@@ -186,7 +187,7 @@ namespace kimiz
             }
         }
 
-        private void SiparisForm_Load(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
