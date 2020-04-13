@@ -1,7 +1,7 @@
 <center><b>KIMIZ</b></center>
 (https://tr.wikipedia.org/wiki/K%C4%B1m%C4%B1z)
 
-Kafe ve restorant otomasyonu
+Kafe ve restorant adisyon otomasyonu
 
 C# ile kodlanan veritabanı olarak json dosyası kullanan bir program.
 
